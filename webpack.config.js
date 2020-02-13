@@ -50,6 +50,11 @@ module.exports = {
     resolve: {
         extensions: [".js", ".jsx"]
     },
+    devServer: {
+        contentBase: "public/",
+        port: 8000,
+        stats: "minimal"
+    },
     stats: {
         colors: true
     },
