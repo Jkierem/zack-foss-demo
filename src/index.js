@@ -1,9 +1,8 @@
-document.querySelector("body").appendChild(
-    (() => {
-        const div = document.createElement("h1");
-        const text = document.createTextNode("Hello world!");
-        div.style.fontSize = "2em";
-        div.appendChild(text);
-        return div
-    })()
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(    
+    <App />,
+    document.getElementById("root")
 )
